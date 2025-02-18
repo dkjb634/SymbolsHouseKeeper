@@ -1,0 +1,59 @@
+﻿# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.rsuser
+*.pdb
+*.cache
+*.config
+*.vspscc
+
+# Rider IDE files
+.idea/
+*.sln.iml
+
+# Visual Studio Code workspace files
+.vscode/
+
+# Logs
+*.log
+*.tlog
+*.ide.log
+
+# Dependency directories
+packages/
+node_modules/
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+thumbs.db
+desktop.ini
+
+# Environment files
+.env
+.env.*
+
+# Dotnet-specific files
+*.vs/
+project.lock.json
+*.csproj.user
+*.csproj.layout
+global.json
+artifacts/
+
+# Ignore Resharper files
+_ReSharper*/
+*.DotSettings.user
+resharper/*
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
