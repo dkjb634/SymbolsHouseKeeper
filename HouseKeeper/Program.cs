@@ -16,8 +16,16 @@ public static class Program
             Console.WriteLine("Usage: SymbolCleanup <path-to-symbol-storage>. Path to symbol storage is required.");
             return;
         }
-
+        
         string symbolStoragePath = (String.IsNullOrEmpty(HardCodedPath))? args[0] : HardCodedPath;
+        
+        Console.WriteLine($@"The specified path is {symbolStoragePath}. Proceeding will partially delete files and folders inside of that directory. Are you sure you want to proceed? (y/n)");
+        var key = Console.ReadKey();
+
+        if (key.Key != ConsoleKey.Y)
+        {
+	        Console.WriteLine("\n Disagree received. Press Enter to exit. Restart and press 'Y' to proceed with cleanup.");
+        }
 
         if (!Directory.Exists(symbolStoragePath))
         {
